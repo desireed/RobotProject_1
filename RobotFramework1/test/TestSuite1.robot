@@ -23,6 +23,10 @@ MySecondTest
 MyThirdTest
     Log    Hello World...    
 
+*** Test Cases ***
+MyFourthTest
+    Log    Hello World...    
+
 FirstSeleniumTest
     Open Browser    https://www.google.com    ff
     Set Browser Implicit Wait    5
