@@ -41,7 +41,7 @@ SampleLoginTest
     [Documentation]    This is a sample Login test
     Open Browser    ${URL}    ff
     Set Browser Implicit Wait    5
-    Input Text        id=txtUsername    @{CREDENTIALS}[0]
+    Input Text        id=txtUsername    ${CREDENTIALS}[0]
     Input Password    id=txtPassword    &{LOGINDATA}[password]
     click Button    id=btnLogin
     Click Element    id=welcome
@@ -65,7 +65,7 @@ SampleLoginTest2
 
 *** Variables ***
 ${URL}    https://opensource-demo.orangehrmlive.com/
-@{CREDENTIALS}    Admin    admin123
+${CREDENTIALS}    Admin    admin123
 &{LOGINDATA}    username=Admin    password=admin123
 
 *** Keywords ***
